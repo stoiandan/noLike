@@ -7,4 +7,4 @@ document.onscroll = function(){
         for (const button of likeButtons) {
            button.parentNode.removeChild(button);
         }    
-    }   
+}   

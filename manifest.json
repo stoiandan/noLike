@@ -14,7 +14,7 @@
         "*://*.facebook.com/*"
       ],
       "js": [
-        "nolike.js"
+        "content_scripts/nolike.js"
       ]
     }
   ],
