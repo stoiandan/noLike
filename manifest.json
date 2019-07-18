@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "NoLike",
+  "version": "1.0",
+  "description": "Removes reaction content from facebook (like, comment, share, etc.)",
+  "icons": {
+    "16": "icons/nolike-16.png",
+    "32": "icons/nolike-32.png"
+  },
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": [
+        "*://*.facebook.com/*"
+      ],
+      "js": [
+        "nolike.js"
+      ]
+    }
+  ],
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/nolike-32.png",
+    "default_title": "noLike",
+    "default_popup": "popup/nolike.html"
+  }
+}
